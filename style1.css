@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.error-text,
+.error-icon{
+	display: none;
+}
+.field-group.error .error-text,
+.field-group.error .error-icon{
+	display: block;
+}
+.field-group.error input{
+	border: 2px solid hsl(0, 100%, 74%);
+}
+html{
+	font-size: 16px;
+	font-family: 'poppins', sans-serif;
+}
+#intro{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(./images/bg-intro-mobile.png);
+	background-color: hsl(0, 100%, 74%);
+	padding: 100px 0;
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; /*for mobile designs*/
+	text-align: center;
+	padding: 0 30px;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.left{
+	flex: 1;
+	margin-bottom: 50px;
+}
+.left h1{
+	color: white;
+	font-size: 2.5rem;
+	line-height: 3rem;
+	margin-bottom: 15px;
+}
+.left p{
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1.9rem;
+}
+.right{
+	flex: 1;
+}
+.right .top-box{
+	background-color: hsl(248, 32%, 49%);
+	color:white;
+	padding: 15px 90px;
+	border-radius: 15px;
+	border: 15px;
+	box-shadow: 0 7px hsla(249, 10%, 26%, 0.404);
+	margin-bottom: 30px;
+}
+.right .top-box p{
+	font-size: 1.3rem;
+	line-height: 2.2rem;
+}
+.right .top-box p span{
+	font-weight: 700;
+}
+.right .form-container{
+	background-color: white;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 7px hsla(249, 10%, 26%, 0.404);
+}
+.field-group{
+	position: relative;
+	margin-bottom: 25px;
+}
+.right label{
+	display: none;
+}
+.right input:focus{
+	border: 1.5px solid hsl(249, 10%, 26%);
+}
+.right input::placeholder{
+	color: hsl(249, 10%, 26%, 0.678);
+	font-size: 1.1rem;
+	font-weight: 600;
+	font-family: 'poppins';
+}
+.right input,
+.right button[type = submit]{ /*even without putting "type = submit", it will work*/
+	width: 100%;
+	height: 60px;
+	margin-bottom: 5px;
+	border-radius: 8px;
+	border: 1.3px solid hsl(246, 25%, 77%);
+	padding-left: 20px;
+	outline: none;
+	color: hsl(249, 10%, 26%);
+	font-family: 'poppins';
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+.right button[type = submit]{
+	border: none;
+	background-color: hsl(154, 59%, 51%);
+	color: white;
+	box-shadow: 0px 4px hsl(154, 56%, 44%);
+	font: 500;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 0;
+}
+.right button[type = submit]:hover{
+	background-color: hsl(154, 87%, 58%);
+	cursor: pointer;
+}
+.right .form-footer{
+	margin-top: 10px;
+	color: hsl(246, 25%, 77%);
+}
+.right .form-footer span{
+	color: hsl(0, 100%, 74%);
+	font-weight: 700;
+}
+.error-icon{
+	position: absolute;
+	top: 28%;
+	right: 20px;
+}
+.error-text{
+	text-align: right;
+	font-size: .8rem;
+	font-style: italic;
+	color: hsl(0, 100%, 74%);
+	font-weight: 500;
+}
+
+
+@media only screen and (min-width: 1000px){
+	#intro{
+		background-image: url(./images/bg-intro-desktop.png);
+	}
+	.container{
+		flex-direction: row;
+	}
+	.left{
+		text-align: left;
+		padding-right: 50px;
+	}
+	.left h1{
+		font-size: 3rem;
+		line-height: 3.5rem;
+	}
+	.left p{
+		font-size: 1.1rem;
+	}
+	.right{
+		max-width: 500px;
+	}
+	.right .top-box p{
+		font-size: 1.1rem;
+		padding: 20px;
+	}
+	.right .form-container{
+		padding: 40px;
+	}
+	.right input,
+	.right input::placeholder{
+		font-size: 1.05rem;
+	}
+	.right .form-footer{
+		margin-top: 20px;
+		font-size: .7rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@400;700&family=Poppins&display=swap');
+.body{
+	background-color: #f2f2f2;
+	font-family: 'Lexend Deca', sans-serif;
+}
+.house{
+	position: relative;
+	font-size: 25px;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 50%;
+	display: flex;
+}
+.cards{
+	margin: auto;
+	display: flex;
+	position: absolute;
+	color: white;
+}
+.card-content{
+	padding: 50px;
+}
+.card1{
+	background-color: hsl(31, 77%, 52%);
+	height: 600px;
+	width: 350px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.card1 img{
+	padding-bottom: 25px;
+	padding-top: 20px;
+}
+.card1 .card-content button{
+	background-color: hsl(31, 77%, 52%);
+	border-color: hsl(31, 77%, 52%);
+}
+.card2{
+	background-color: hsl(184, 100%, 22%);
+	height: 600px;
+	width: 350px;
+}
+.card2 img{
+	padding-bottom: 25px;
+	padding-top: 20px;
+}
+.card2 .card-content button{
+	background-color: hsl(184, 100%, 22%);
+	border-color: hsl(184, 100%, 22%);
+}
+.card3{
+	background-color: hsl(179, 100%, 13%);
+	height: 600px;
+	width: 350px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.card3 img{
+	padding-bottom: 25px;
+	padding-top: 20px;
+}
+.card3 .card-content button{
+	background-color: hsl(179, 100%, 13%);
+	border-color: hsl(179, 100%, 13%);
+}
+p{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+h2{
+	padding-bottom: 50px;
+}
+.card-content button{
+	margin-top: 70px;
+	border-radius: 50px;
+	padding: 15px;
+	border-width: 5px;
+	border-style: solid;
+}
+.card-content button p{
+	color: white;
+	font-size: 18px;
+}
+.card-content button:hover{
+	cursor: pointer;
+	border-color: white;
+}
+
